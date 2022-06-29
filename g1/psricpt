@@ -1,0 +1,11 @@
+#argumentos - $ 
+# $1 - primeiro argumento 
+
+for ((i=0;i<=$1;i++)) 
+do 
+   Idade = $(((RANDOM % 100)+1))
+   echo "./pessoas -i Pessoa${i} $IDADE"
+
+   ./pessoas -i Pessoa${i} $IDADE
+
+done
